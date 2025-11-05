@@ -1,18 +1,16 @@
 # Chatbot com Node.js
 
-Automatização de atendimento para clínica médica
+Automatiza o pré-atendimento de clínicas médicas
 
 ## Descrição
 
-Este projeto implementa um chatbot em Node.js para auxiliar a secretaria de uma clínica médica. Ele responde a perguntas frequentes, agenda consultas e encaminha para atendente humano quando necessário.
+Este projeto implementa um chatbot em Node.js para agilizar o contato inicial de pacientes com a clínica. O chatbot coleta todas as informações essenciais antes do atendimento humano, permitindo que o secretário foque apenas no agendamento da consulta.
 
 ## Funcionalidades
 
-* Processar mensagens de usuários
-* Gerar respostas automáticas
-* Encaminhar para atendente humano
-* Integração com sistemas da clínica
-* Registro de interações
+* Coletar dados essenciais do paciente
+* Responder dúvidas iniciais de forma automática
+* Encaminhar informações completas para atendimento humano
 
 ## Tecnologias
 
@@ -54,16 +52,13 @@ Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 ```
 PORT=3000
 API_KEY_CHATBOT=seu_token_aqui
-DB_HOST=localhost
-DB_USER=usuario
-DB_PASS=senha
 ```
 
 ## Uso
 
 * Acesse `http://localhost:<PORT>`
-* Envie mensagens como "Olá" ou "Agendar consulta"
-* O chatbot responderá ou encaminhará conforme a lógica implementada
+* O chatbot iniciará o pré-atendimento do paciente
+* As informações coletadas serão encaminhadas para o atendimento humano
 
 ## Estrutura do Projeto
 
@@ -74,6 +69,7 @@ DB_PASS=senha
 │  .env.example
 │  README.md
 │  ... (controllers, services, routes)
+
 ```
 
 Artur Bertoluci — [GitHub](https://github.com/bertoluciartur)
